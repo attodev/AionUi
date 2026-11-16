@@ -1086,6 +1086,8 @@ export const bedrock = {
   >('/api/bedrock/test-connection'),
 };
 
+export { newapi } from './newapiBridge'; // fork(newapi)
+
 // ---------------------------------------------------------------------------
 // Mode (Provider management) — routed to /api/providers/*
 // ---------------------------------------------------------------------------

@@ -60,6 +60,9 @@ vi.mock('@renderer/components/chat/CollapsibleContent', () => ({
   default: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
 }));
 
+// fork(newapi)
+vi.mock('@renderer/components/newapi/NewApiReloginButton', () => ({ NewApiReloginButton: () => null }));
+
 // MarkdownView pulls in a heavy markdown pipeline — replace with a passthrough.
 vi.mock('@renderer/components/Markdown', () => ({
   default: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,

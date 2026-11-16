@@ -4,6 +4,7 @@ import AppLoader from '@renderer/components/layout/AppLoader';
 import DocumentTitle from '@renderer/components/layout/DocumentTitle';
 import { useCrossSessionRateLimitNotice } from '@/renderer/hooks/system/useCrossSessionRateLimitNotice';
 import { useAuth } from '@renderer/hooks/context/AuthContext';
+import { NewApiGate, NewApiLoginPage } from '@/renderer/components/newapi'; // fork(newapi)
 import { TEAM_MODE_ENABLED } from '@/common/config/constants';
 const Conversation = React.lazy(() => import('@renderer/pages/conversation'));
 const Guid = React.lazy(() => import('@renderer/pages/guid'));
@@ -57,7 +58,7 @@ const ProtectedLayout: React.FC<{ layout: React.ReactElement }> = ({ layout }) =
     return <Navigate to='/login' replace />;
   }
 
-  return React.cloneElement(layout);
+  return <NewApiGate>{React.cloneElement(layout)}</NewApiGate>; // fork(newapi)
 };
 
 const PanelRoute: React.FC<{ layout: React.ReactElement }> = ({ layout }) => {
@@ -71,6 +72,8 @@ const PanelRoute: React.FC<{ layout: React.ReactElement }> = ({ layout }) => {
           path='/login'
           element={status === 'authenticated' ? <Navigate to='/guid' replace /> : withRouteFallback(LoginPage)}
         />
+        {/* fork(newapi) */}
+        <Route path='/newapi-login' element={withRouteFallback(NewApiLoginPage)} />
         <Route element={<ProtectedLayout layout={layout} />}>
           <Route index element={<Navigate to='/guid' replace />} />
           <Route path='/guid' element={withRouteFallback(Guid)} />

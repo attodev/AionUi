@@ -26,6 +26,7 @@ import AddModelModal from '@/renderer/pages/settings/components/AddModelModal';
 import AddPlatformModal from '@/renderer/pages/settings/components/AddPlatformModal';
 import { isNewApiPlatform, NEW_API_PROTOCOL_OPTIONS } from '@/renderer/utils/model/modelPlatforms';
 import EditModeModal from '@/renderer/pages/settings/components/EditModeModal';
+import { NewApiProviderAction } from '@/renderer/components/newapi'; // fork(newapi)
 import AionScrollArea from '@/renderer/components/base/AionScrollArea';
 import TalkToButlerButton from '@/renderer/components/base/TalkToButlerButton';
 import { useProvidersQuery } from '@/renderer/hooks/agent/useModelProviderList';
@@ -477,6 +478,8 @@ const ModelModalContent: React.FC = () => {
                           <span className='text-12px text-t-secondary whitespace-nowrap md:hidden'>
                             {(platform.models ?? []).length} / {getApiKeyCount(platform.api_key)}
                           </span>
+                          {/* fork(newapi) */}
+                          <NewApiProviderAction providerId={platform.id} />
                           {/* 供应商启用开关 / Provider enable switch */}
                           <Switch
                             size='small'

@@ -12,6 +12,7 @@ import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import MarkdownView from '@renderer/components/Markdown';
 import ButlerDiagnoseButton from '@renderer/components/base/ButlerDiagnoseButton';
+import { NewApiAuthErrorAction } from '@/renderer/components/newapi'; // fork(newapi)
 import FeedbackButton from '@renderer/components/base/FeedbackButton';
 import CollapsibleContent from '@renderer/components/chat/CollapsibleContent';
 import { iconColors } from '@/renderer/styles/colors';
@@ -164,6 +165,8 @@ const MessageTips: React.FC<{ message: IMessageTips }> = ({ message }) => {
               {resolutionHint && (
                 <div className='text-t-secondary whitespace-break-spaces [word-break:break-word]'>{resolutionHint}</div>
               )}
+              {/* fork(newapi) */}
+              <NewApiAuthErrorAction errorCode={errorCode} />
               {detailParts.length > 0 && (
                 <Collapse bordered={false} className='bg-transparent' defaultActiveKey={['technical-details']}>
                   <Collapse.Item
