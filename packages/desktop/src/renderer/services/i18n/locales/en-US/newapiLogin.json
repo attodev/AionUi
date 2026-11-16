@@ -1,0 +1,14 @@
+{
+  "title": "Sign in with your New API account",
+  "server": "Server: {{url}}",
+  "signIn": "Sign in with browser",
+  "waiting": "Finish signing in from your browser…",
+  "reopen": "Open again",
+  "cancel": "Cancel",
+  "tokenRejected": "Your token is no longer valid. Please sign in again.",
+  "failed": "Sign-in failed: {{message}}",
+  "notConfiguredTitle": "The New API server address is not set",
+  "notConfiguredBody": "Create the file below and restart the app.",
+  "relogin": "Sign in again",
+  "back": "Back"
+}

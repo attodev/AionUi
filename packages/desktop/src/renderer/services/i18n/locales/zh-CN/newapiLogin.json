@@ -1,0 +1,14 @@
+{
+  "title": "请使用 New API 账号登录",
+  "server": "服务器：{{url}}",
+  "signIn": "在浏览器中登录",
+  "waiting": "请在浏览器中完成登录…",
+  "reopen": "重新打开",
+  "cancel": "取消",
+  "tokenRejected": "令牌已失效，请重新登录。",
+  "failed": "登录失败：{{message}}",
+  "notConfiguredTitle": "尚未设置 New API 服务器地址",
+  "notConfiguredBody": "请创建下面的文件并重新启动应用。",
+  "relogin": "重新登录",
+  "back": "返回"
+}

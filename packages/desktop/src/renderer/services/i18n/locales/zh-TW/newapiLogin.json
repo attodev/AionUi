@@ -1,0 +1,14 @@
+{
+  "title": "請使用 New API 帳號登入",
+  "server": "伺服器：{{url}}",
+  "signIn": "在瀏覽器中登入",
+  "waiting": "請在瀏覽器中完成登入…",
+  "reopen": "重新開啟",
+  "cancel": "取消",
+  "tokenRejected": "權杖已失效，請重新登入。",
+  "failed": "登入失敗：{{message}}",
+  "notConfiguredTitle": "尚未設定 New API 伺服器位址",
+  "notConfiguredBody": "請建立下方的檔案並重新啟動應用程式。",
+  "relogin": "重新登入",
+  "back": "返回"
+}

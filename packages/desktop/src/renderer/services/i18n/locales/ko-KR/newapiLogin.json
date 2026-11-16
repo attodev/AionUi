@@ -1,0 +1,14 @@
+{
+  "title": "New API 계정으로 로그인하세요",
+  "server": "서버: {{url}}",
+  "signIn": "브라우저에서 로그인",
+  "waiting": "브라우저에서 로그인을 완료해 주세요…",
+  "reopen": "다시 열기",
+  "cancel": "취소",
+  "tokenRejected": "토큰이 만료되었습니다. 다시 로그인해 주세요.",
+  "failed": "로그인에 실패했습니다: {{message}}",
+  "notConfiguredTitle": "New API 서버 주소가 설정되지 않았습니다",
+  "notConfiguredBody": "아래 파일을 만들고 앱을 다시 시작하세요.",
+  "relogin": "다시 로그인",
+  "back": "뒤로"
+}
