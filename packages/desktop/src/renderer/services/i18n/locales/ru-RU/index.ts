@@ -23,6 +23,7 @@ import agent from './agent.json';
 import team from './team.json';
 import pet from './pet.json';
 import newapiLogin from './newapiLogin.json'; // fork(newapi)
+import codeTab from './codeTab.json'; // fork(opencode)
 
 export default {
   common,
@@ -45,4 +46,5 @@ export default {
   team,
   pet,
   newapiLogin, // fork(newapi)
+  codeTab, // fork(opencode)
 };

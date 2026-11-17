@@ -6,6 +6,7 @@
 
 import { ipcBridge } from '@/common';
 import type { Assistant } from '@/common/types/agent/assistantTypes';
+import { filterChatAssistants } from '@renderer/pages/code-start/chatAssistants'; // fork(opencode)
 import { useEffect } from 'react';
 import useSWR, { mutate as swrMutate } from 'swr';
 
@@ -34,7 +35,7 @@ export const useCustomAgentsLoader = (): UseCustomAgentsLoaderResult => {
       return [] as Assistant[];
     }
   });
-  const assistants = assistantList ?? [];
+  const assistants = filterChatAssistants(assistantList ?? []); // fork(opencode)
 
   useEffect(() => {
     void swrMutate('assistants.list');

@@ -7,7 +7,7 @@ import { useAuth } from '@renderer/hooks/context/AuthContext';
 import { NewApiGate, NewApiLoginPage } from '@/renderer/components/newapi'; // fork(newapi)
 import { TEAM_MODE_ENABLED } from '@/common/config/constants';
 const Conversation = React.lazy(() => import('@renderer/pages/conversation'));
-const Guid = React.lazy(() => import('@renderer/pages/guid'));
+const Guid = React.lazy(() => import('@renderer/pages/code-start')); // fork(opencode)
 const AgentSettings = React.lazy(() => import('@renderer/pages/settings/AgentSettings'));
 const AgentRepairPage = React.lazy(() => import('@renderer/pages/settings/AgentSettings/AgentRepairPage'));
 const AssistantSettings = React.lazy(() => import('@renderer/pages/settings/AssistantSettings'));
