@@ -17,6 +17,7 @@ export default defineConfig({
   },
   test: {
     globals: true,
+    env: { AIONUI_UPDATE_BASE_URL: 'https://static.aionui.com/releases' }, // fork(update)
     // CI runners (especially windows-2022) can be slow enough that dom tests
     // rendering heavy components occasionally exceed the local 10s budget.
     testTimeout: process.env.CI ? 30000 : 10000,

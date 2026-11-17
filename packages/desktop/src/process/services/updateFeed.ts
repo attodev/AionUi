@@ -6,8 +6,9 @@
 
 import { CdnGenericProvider } from './cdnGenericProvider';
 import type { CdnGenericProviderConfiguration } from './cdnGenericProvider';
+import { UPDATE_BASE_URL } from './updateFeedUrl'; // fork(update)
 
-export const CDN_UPDATE_BASE_URL = 'https://static.aionui.com/releases';
+export const CDN_UPDATE_BASE_URL = UPDATE_BASE_URL; // fork(update)
 
 export type CdnFeedOptions = CdnGenericProviderConfiguration & {
   updateProvider: typeof CdnGenericProvider;

@@ -25,6 +25,7 @@ import * as path from 'path';
 import semver from 'semver';
 import { autoUpdaterService } from '../services/autoUpdaterService';
 import { consumeInstallerLastFailure } from '../services/installerLastFailure';
+import { UPDATE_BASE_URL, UPDATE_GITHUB_REPO, UPDATE_HOST } from '../services/updateFeedUrl'; // fork(update)
 
 /** Lazily loads i18n to avoid pulling in initStorage chain at module load time */
 let _i18nCache: Promise<typeof import('../services/i18n')> | null = null;
@@ -60,11 +61,11 @@ interface AutoUpdateCheckParams {
   includePrerelease?: boolean;
 }
 
-const DEFAULT_REPO = 'iOfficeAI/AionUi';
+const DEFAULT_REPO = UPDATE_GITHUB_REPO; // fork(update)
 const DEFAULT_USER_AGENT = 'AionUi';
 const ALLOWED_ASSET_EXTS = new Set(['.exe', '.msi', '.dmg', '.zip', '.deb', '.rpm']);
-const CDN_HOST = 'static.aionui.com';
-const CDN_BASE_URL = `https://${CDN_HOST}/releases`;
+const CDN_HOST = UPDATE_HOST; // fork(update)
+const CDN_BASE_URL = UPDATE_BASE_URL; // fork(update)
 const ALLOWED_DOWNLOAD_HOSTS = new Set<string>([
   CDN_HOST,
   'github.com',
