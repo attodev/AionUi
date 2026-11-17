@@ -1,0 +1,17 @@
+{
+  "tabs": {
+    "chat": "Chat",
+    "code": "Code"
+  },
+  "placeholder": "What should we build?",
+  "pickFolder": "Choose folder",
+  "folderRequired": "Choose a working folder first",
+  "folderMissing": "The selected folder no longer exists",
+  "noOpencode": "opencode was not found. Reinstall the app or contact your administrator.",
+  "noModels": "No models are available",
+  "mode": {
+    "build": "Build",
+    "plan": "Plan"
+  },
+  "createFailed": "Could not start the code conversation"
+}

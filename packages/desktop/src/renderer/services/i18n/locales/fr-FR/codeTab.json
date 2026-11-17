@@ -1,0 +1,17 @@
+{
+  "tabs": {
+    "chat": "Discussion",
+    "code": "Code"
+  },
+  "placeholder": "Que construisons-nous ?",
+  "pickFolder": "Choisir un dossier",
+  "folderRequired": "Choisissez d'abord un dossier de travail",
+  "folderMissing": "Le dossier sélectionné n'existe plus",
+  "noOpencode": "opencode est introuvable. Réinstallez l'application ou contactez votre administrateur.",
+  "noModels": "Aucun modèle disponible",
+  "mode": {
+    "build": "Construire",
+    "plan": "Planifier"
+  },
+  "createFailed": "Impossible de démarrer la conversation de code"
+}

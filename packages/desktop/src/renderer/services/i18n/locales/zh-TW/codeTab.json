@@ -1,0 +1,17 @@
+{
+  "tabs": {
+    "chat": "對話",
+    "code": "程式碼"
+  },
+  "placeholder": "要建構什麼？",
+  "pickFolder": "選擇資料夾",
+  "folderRequired": "請先選擇工作資料夾",
+  "folderMissing": "所選資料夾已不存在",
+  "noOpencode": "找不到 opencode。請重新安裝應用程式或聯絡管理員。",
+  "noModels": "沒有可用的模型",
+  "mode": {
+    "build": "建構",
+    "plan": "計畫"
+  },
+  "createFailed": "無法啟動程式碼對話"
+}

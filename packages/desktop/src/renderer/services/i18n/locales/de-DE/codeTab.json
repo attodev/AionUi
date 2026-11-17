@@ -1,0 +1,17 @@
+{
+  "tabs": {
+    "chat": "Chat",
+    "code": "Code"
+  },
+  "placeholder": "Was sollen wir bauen?",
+  "pickFolder": "Ordner auswählen",
+  "folderRequired": "Wähle zuerst einen Arbeitsordner aus",
+  "folderMissing": "Der ausgewählte Ordner existiert nicht mehr",
+  "noOpencode": "opencode wurde nicht gefunden. Installiere die App neu oder wende dich an deinen Administrator.",
+  "noModels": "Keine Modelle verfügbar",
+  "mode": {
+    "build": "Bauen",
+    "plan": "Planen"
+  },
+  "createFailed": "Die Code-Unterhaltung konnte nicht gestartet werden"
+}

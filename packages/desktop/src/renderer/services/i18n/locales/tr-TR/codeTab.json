@@ -1,0 +1,17 @@
+{
+  "tabs": {
+    "chat": "Sohbet",
+    "code": "Kod"
+  },
+  "placeholder": "Ne inşa edelim?",
+  "pickFolder": "Klasör seç",
+  "folderRequired": "Önce bir çalışma klasörü seçin",
+  "folderMissing": "Seçilen klasör artık mevcut değil",
+  "noOpencode": "opencode bulunamadı. Uygulamayı yeniden yükleyin veya yöneticinizle iletişime geçin.",
+  "noModels": "Kullanılabilir model yok",
+  "mode": {
+    "build": "Derle",
+    "plan": "Planla"
+  },
+  "createFailed": "Kod sohbeti başlatılamadı"
+}

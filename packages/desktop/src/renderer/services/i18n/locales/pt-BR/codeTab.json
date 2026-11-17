@@ -1,0 +1,17 @@
+{
+  "tabs": {
+    "chat": "Conversa",
+    "code": "Código"
+  },
+  "placeholder": "O que vamos construir?",
+  "pickFolder": "Escolher pasta",
+  "folderRequired": "Escolha primeiro uma pasta de trabalho",
+  "folderMissing": "A pasta selecionada não existe mais",
+  "noOpencode": "opencode não foi encontrado. Reinstale o aplicativo ou entre em contato com o administrador.",
+  "noModels": "Nenhum modelo disponível",
+  "mode": {
+    "build": "Construir",
+    "plan": "Planejar"
+  },
+  "createFailed": "Não foi possível iniciar a conversa de código"
+}

@@ -1,0 +1,17 @@
+{
+  "tabs": {
+    "chat": "チャット",
+    "code": "コード"
+  },
+  "placeholder": "何を作りますか？",
+  "pickFolder": "フォルダを選択",
+  "folderRequired": "先に作業フォルダを選択してください",
+  "folderMissing": "選択したフォルダが見つかりません",
+  "noOpencode": "opencode が見つかりません。アプリを再インストールするか、管理者に連絡してください。",
+  "noModels": "利用可能なモデルがありません",
+  "mode": {
+    "build": "ビルド",
+    "plan": "プラン"
+  },
+  "createFailed": "コードの会話を開始できませんでした"
+}

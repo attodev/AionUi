@@ -1,0 +1,17 @@
+{
+  "tabs": {
+    "chat": "对话",
+    "code": "代码"
+  },
+  "placeholder": "要构建什么？",
+  "pickFolder": "选择文件夹",
+  "folderRequired": "请先选择工作文件夹",
+  "folderMissing": "所选文件夹已不存在",
+  "noOpencode": "未找到 opencode。请重新安装应用或联系管理员。",
+  "noModels": "没有可用的模型",
+  "mode": {
+    "build": "构建",
+    "plan": "计划"
+  },
+  "createFailed": "无法启动代码对话"
+}
